@@ -1,7 +1,8 @@
 // execute with `$ node ./scripts/regex.js`
-var CELSIUS = /(\d+(\.\d+)?)\s?(°|degrees?|\sin)(\sin)?\s?(C(elsius)?|celsius)/g;
+var CELSIUS = /(-?\d+(\.\d+)?)\s?(°|degrees?|\sin)(\sin)?\s?(C(elsius)?|celsius)/g;
 
 var assertEqualStrings = [
+  '-15°C',
   '10°C',
   '10°Celsius',
   '10°celsius',

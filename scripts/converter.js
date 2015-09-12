@@ -1,4 +1,4 @@
-var CELSIUS = /(\d+(\.\d+)?)\s?(°|degrees?|\sin)(\sin)?\s?(C(elsius)?|celsius)/g;
+var CELSIUS = /(-?\d+(\.\d+)?)\s?(°|degrees?|\sin)(\sin)?\s?(C(elsius)?|celsius)/g;
 
 var everythingLoaded = setInterval(function() {
   if (/loaded|complete/.test(document.readyState)) {
